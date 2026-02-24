@@ -1,0 +1,77 @@
+@import url('./globals.css');
+
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    font-family: "Alata", sans-serif;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--highlight-color);
+}
+
+.container-grid {
+    display: flex;
+    flex-direction: column; /* Fuerza a que las tarjetas vayan una debajo de otra */
+    align-items: center;    /* Las centra en la pantalla */
+    gap: 40px;              /* Espacio entre cada tarjeta */
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px;      /* Para que no se estiren al infinito en pantallas grandes */
+    margin: 0 auto;         /* Centra todo el grupo */
+}
+
+.card {
+    background-color: var(--bg-card);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;       /* Ancho cómodo para leer */
+    display: flex;
+    flex-direction: column; /* Contenido hacia abajo: Imagen -> Título -> P */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: auto;           /* Que mantenga su forma original */
+    max-height: 400px;      /* Que no sea gigante */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;    /* Espacio con el título */
+}
+
+.card h3 {
+    color: var(--highlight-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border: 1px solid var(--highlight-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--highlight-color);
+    color: black;
+}
