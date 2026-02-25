@@ -20,13 +20,13 @@ nav a:hover {
 
 .container-grid {
     display: flex;
-    flex-direction: column; /* Fuerza a que las tarjetas vayan una debajo de otra */
-    align-items: center;    /* Las centra en la pantalla */
-    gap: 40px;              /* Espacio entre cada tarjeta */
+    flex-direction: column; 
+    align-items: center;    
+    gap: 40px;              
     padding: 40px 20px;
     width: 100%;
-    max-width: 1200px;      /* Para que no se estiren al infinito en pantallas grandes */
-    margin: 0 auto;         /* Centra todo el grupo */
+    max-width: 1200px;      
+    margin: 0 auto;        
 }
 
 .card {
@@ -34,19 +34,19 @@ nav a:hover {
     border-radius: 20px;
     padding: 30px;
     width: 100%;
-    max-width: 600px;       /* Ancho cómodo para leer */
+    max-width: 600px;       
     display: flex;
-    flex-direction: column; /* Contenido hacia abajo: Imagen -> Título -> P */
+    flex-direction: column; 
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .card img {
     width: 100%;
-    height: auto;           /* Que mantenga su forma original */
-    max-height: 400px;      /* Que no sea gigante */
+    height: auto;           
+    max-height: 400px;      
     object-fit: cover;
     border-radius: 12px;
-    margin-bottom: 20px;    /* Espacio con el título */
+    margin-bottom: 20px;   
 }
 
 .card h3 {
