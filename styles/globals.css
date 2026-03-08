@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Alata&display=swap');
+
+:root {
+    --bg-color-dark: #131200;
+    --bg-card: #1c1a05;
+    --text-color-dark: #EDF2F4;
+    --primary-color: #1648a5;      
+    --highlight-color: #21759c;    
+    --links-hover: #8D91C7;
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
