@@ -4,69 +4,66 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./styles/estilos.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/estilos.css" />
     <meta name="viewport" content="width=evice-width, initial-scale=1.0">
     <meta name="description" content="Portafolio profesional de Ingeniero en software">
     <meta name="keywords" content="portafolio, ingeniero en software, ti, desarrollo webs">
     <meta name="autor" content="Alejandro Rodríguez Lugo">
     <meta name="robots" content="index, follow">
-    <title>Portafolio profesional Alejandro Rodriguez</title>
+    <title>Portafolio profesional: Alejandro Rodriguez</title>
     <link rel="icon" type="image/png"
-        href="https://r-charts.com/es/miscelanea/procesamiento-imagenes-magick_files/figure-html/color-fondo-imagen-r.png">
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWeWkdkt-LDzzfxsafBcYlmCv2BCPm-PWow&s">
 </head>
 
 <body>
-    <header>
-        <h1>Alejandro Rodríguez Lugo</h1>
-        <p>Ingeniero en software | Estudiante </p>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./contact.html">Contacto</a>
-            <a href="./projects.html">Proyectos</a>
-            <a href="./experience.html">Experiencia</a>
-            <a href="./skills.html">Habilidades</a>
-            <a href="./about.html">Sobre mi</a>
-            <a href="#about"></a>
-        </nav>
-    </header>
+    <nav class="main-nav">
+        <div class="brand">
+            <h1>Alejandro Rodríguez Lugo</h1>
+            <p>Estudiante de Ingeniería en Software</p>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html">Proyectos</a></li>
+            <li><a href="./experience.html">Experiencia</a></li>
+            <li> <a href="./skills.html">Habilidades</a></li>
+            <li> <a href="./about.html">Sobre mí</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+    </nav>
     <main>
-        <h2>Proyectos</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Año</th>
-                    <th>Rol</th>
-                    <th>Descripción</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2025</td>
-                    <td>Backend</td>
-                    <td>Desarrollo de sistema cinema</td>
-                </tr>
-                <tr>
-                    <td>2025</td>
-                    <td>Frontend</td>
-                    <td>Simulación de whatsapp</td>
-                </tr>
-            </tbody>
-        </table>
-        <section>
-            <p>Para dichos proyectos utilizamos Java como lenguaje de programación y a su vez, JavaSwing para la GUI</p>
+        <section class="container-grid">
+            <h2>Proyectos realizados</h2>
+            <div class="row-flex">
+                <article class="card-mini">
+                    <H3>Sistema cinema</H3>
+                    <p>Sistema de arquitectura en 4 capas encargado de la administración de simulación de cine.</p>
+                    <div class="tags">
+                        <span class="tag java">Java</span>
+                        <span class="tag sql">SQL</span>
+                    </div>
+                    <a href="https://github.com/saulapodaca/SistemaCinema/tree/alejandro" target="_blank"
+                        rel="noopener noreferrer" class="btn-contacto">GitHub</a>
+                </article>
+                <article class="card-mini">
+                    <H3>Agencia fiscal</H3>
+                    <p>Sistema de arquitectura en 3 capas encargado de la gestión de control vehicular.</p>
+                    <div class="tags">
+                        <span class="tag java">Java</span>
+                        <span class="tag nosql">NoSQl</span>
+                    </div>
+                    <a href="https://github.com/egho22/agenciaFiscal" target="_blank" rel="noopener noreferrer"
+                        class="btn-contacto">GitHub</a>
+                </article>
+            </div>
         </section>
-        <article class="card">
-            <p>Link para el repositorio del proyecto de SistemaCinema:</p>
-            <a href="https://github.com/saulapodaca/SistemaCinema/tree/alejandro" target="_blank"
-                rel="noopener noreferrer">GitHub SistemaCinema</a>
-        </article>
     </main>
     <footer>
-        <section>
-            Sigueme en mis redes:
-            <a href="https://www.youtube.com/watch?v=reKlnc6r2Oo&list=RDGMEMCMFH2exzjBeE_zAHHJOdxg&index=7"
-                target="_blank" rel="noopener noreferrer">Youtube</a>
-        </section>
         <p>&copy;2026 Alejandro Rodriguez Lugo. Todos los derechos reservados</p>
     </footer>
 </body>

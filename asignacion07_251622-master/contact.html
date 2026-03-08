@@ -10,62 +10,99 @@
     <meta name="keywords" content="portafolio, ingeniero en software, ti, desarrollo webs">
     <meta name="autor" content="Alejandro Rodríguez Lugo">
     <meta name="robots" content="index, follow">
-    <title>Portafolio profesional Alejandro Rodriguez</title>
+    <title>Portafolio profesional: Alejandro Rodriguez</title>
     <link rel="icon" type="image/png"
-        href="https://r-charts.com/es/miscelanea/procesamiento-imagenes-magick_files/figure-html/color-fondo-imagen-r.png">
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWeWkdkt-LDzzfxsafBcYlmCv2BCPm-PWow&s">
 </head>
 
 <body>
-    <header>
-        <h1>Alejandro Rodríguez Lugo</h1>
-        <p>Ingeniero en software | Estudiante </p>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./contact.html">Contacto</a>
-            <a href="./projects.html">Proyectos</a>
-            <a href="./experience.html">Experiencia</a>
-            <a href="./skills.html">Habilidades</a>
-            <a href="./about.html">Sobre mi</a>
-            <a href="#about"></a>
-        </nav>
-    </header>
+    <nav class="main-nav">
+        <div class="brand">
+            <h1>Alejandro Rodríguez Lugo</h1>
+            <p>Estudiante de Ingeniería en Software</p>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html">Proyectos</a></li>
+            <li><a href="./experience.html">Experiencia</a></li>
+            <li> <a href="./skills.html">Habilidades</a></li>
+            <li> <a href="./about.html">Sobre mí</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="container-grid">
-            <h2>Formulario de contacto</h2>
-            <form action="https://mibackend.com/contacto" method="post">
-                <label for="nombre">Nombre completo: </label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej. Alejandro Rodríguez"><br>
-                <label for="email">Correo electronico</label>
-                <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required
-                    pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"> <br>
-                <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="10 digitos" pattern="[0-9]{10}"><br>
-                <label for="edad">Fecha:</label>
-                <input type="date" name="edad" id="edad"><br>
-                <label for="motivo">Motivo de contacto:</label>
-                <select name="motivo" id="motivo">
-                    <option value="">Seleccione una opción</option>
-                    <option value="">Trabajo</option>
-                    <option value="">Trabajo</option>
-                </select>
-                <br>
-                <label for="contacto-correo">¿Cómo te gustaria que te contacten? </label><br>
-                <input type="radio" id="contacto-correo" name="contacto-correo" value="correo">
-                <label for="contacto-correo">Correo</label>
-                <br>
-                <input type="radio" id="contacto-correo" name="contacto-correo" value="whatsapp">
-                <label for="contacto-wha">Whatsapp</label>
-                <br>
-                <button type="submit" class="btn">Guardar</button>
-                <button type="reset" class="btn">Limpiar</button>
-            </form>
+            <article class="card-information">
+                <div>
+                    <h2>Formulario de contacto</h2>
+                    <form class="form-grid" action="https://mibackend.com/contacto" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Alejandro Rodríguez" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" pattern="[0-9]{10}"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="edad_num">Edad</label>
+                            <input type="number" id="edad_num" name="edad_num" placeholder="20" min="1" max="120"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha">Fecha de nacimiento</label>
+                            <input type="date" name="fecha" id="fecha" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="motivo">Motivo de contacto</label>
+                            <select name="motivo" id="motivo">
+                                <option value="trabajo">Trabajo</option>
+                                <option value="proyecto">Proyecto</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width radio-section">
+                            <label>¿Cómo te gustaría que te contacten?</label>
+                            <div class="radio-options">
+                                <input type="radio" id="contacto-correo" name="contacto" value="correo" required>
+                                <label for="contacto-correo" class="radio-label">Correo</label>
+                                <input type="radio" id="contacto-wha" name="contacto" value="whatsapp" required>
+                                <label for="contacto-wha" class="radio-label">WhatsApp</label>
+                            </div>
+                        </div>
+
+                        <div class="form-buttons full-width">
+                            <button type="submit" class="btn">Guardar</button>
+                            <button type="reset" class="btn">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <section class="redes">
+            <p>Si crees que mi experiencia puede aportar valor a tu equipo no dudes en contactarme por cualquiera de
+                estas vías: </p>
+            <a href="tel:+526681893121" target="_blank" class="btn-contacto">Teléfono</a>
+            <a href="https://wa.me/526681893121?text=Hola%20Alejandro" target="_blank" class="btn-contacto">Whatsapp</a>
+            <a href="mailto:alejandro.rodriguez251622@potros.itson.edu.mx" target="_blank"
+                class="btn-contacto">Email</a>
         </section>
     </main>
     <footer>
-        <section>
-            Sigueme en mis redes:
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a>
-        </section>
         <p>&copy;2026 Alejandro Rodriguez Lugo. Todos los derechos reservados</p>
     </footer>
 </body>

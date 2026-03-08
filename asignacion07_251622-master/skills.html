@@ -10,47 +10,103 @@
     <meta name="keywords" content="portafolio, ingeniero en software, ti, desarrollo webs">
     <meta name="autor" content="Alejandro Rodríguez Lugo">
     <meta name="robots" content="index, follow">
-    <title>Portafolio profesional Alejandro Rodriguez</title>
+    <title>Portafolio profesional: Alejandro Rodriguez</title>
     <link rel="icon" type="image/png"
-        href="https://r-charts.com/es/miscelanea/procesamiento-imagenes-magick_files/figure-html/color-fondo-imagen-r.png">
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWeWkdkt-LDzzfxsafBcYlmCv2BCPm-PWow&s">
 </head>
 
 <body>
-    <header>
-        <h1>Alejandro Rodríguez Lugo</h1>
-        <p>Ingeniero en software | Estudiante </p>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./contact.html">Contacto</a>
-            <a href="./projects.html">Proyectos</a>
-            <a href="./experience.html">Experiencia</a>
-            <a href="./skills.html">Habilidades</a>
-            <a href="./about.html">Sobre mi</a>
-            <a href="#about"></a>
-        </nav>
-    </header>
+    <nav class="main-nav">
+        <div class="brand">
+            <h1>Alejandro Rodríguez Lugo</h1>
+            <p>Estudiante de Ingeniería en Software</p>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html">Proyectos</a></li>
+            <li><a href="./experience.html">Experiencia</a></li>
+            <li> <a href="./skills.html">Habilidades</a></li>
+            <li> <a href="./about.html">Sobre mí</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="container-grid">
-            <h2>Mis habilidades</h2>
-            <ul>
-                <li>Programación</li>
-                <li>Bases de datos</li>
-                <li>Redes</li>
-            </ul>
+            <h2>Habilidades técnicas</h2>
+            <div class="row-flex">
+                <article class="card-mini">
+                    <H3>Desarrollo frontend</H3>
+                    <div class="tags">
+                        <span class="tag html">HTML5</span>
+                    </div>
+                </article>
+                <article class="card-mini">
+                    <H3>Desarrollo backend</H3>
+                    <div class="tags">
+                        <span class="tag java">Java</span>
+                        <span class="tag python">Python</span>
+                    </div>
+                </article>
+                <article class="card-mini">
+                    <H3>Gestión de datos</H3>
+                    <div class="tags">
+                        <span class="tag sql">MySQL</span>
+                        <span class="tag nosql">MongoDB</span>
+                    </div>
+                </article>
+                <article class="card-mini">
+                    <H3>Herramientas</H3>
+                    <div class="tags">
+                        <span class="tag git">Git / GitHub</span>
+                    </div>
+                </article>
+            </div>
         </section>
         <section class="container-grid">
-            <h2>Lenguajes de programación</h2>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-            </ul>
+            <h2>Habilidades blandas</h2>
+            <div class="row-flex">
+                <article class="card-mini">
+                    <H3>Colaboración</H3>
+                    <ul>
+                        <li>Comunicación técnica</li>
+                        <li>Crítica constructiva</li>
+                    </ul>
+                </article>
+                <article class="card-mini">
+                    <H3>Interpersonales</H3>
+                    <ul>
+                        <li>Trabajo en equipo</li>
+                        <li>Empatía</li>
+                        <li>Escucha activa</li>
+                        <li>Paciencia</li>
+                    </ul>
+                </article>
+                <article class="card-mini">
+                    <H3>Gestión y ejecución</H3>
+                    <ul>
+                        <li>Gestión del tiempo</li>
+                        <li>Toma de decisiones</li>
+                        <li>Resolución de problemas técnicos</li>
+                    </ul>
+                </article>
+                <article class="card-mini">
+                    <H3>Cognitivas</H3>
+                    <ul>
+                        <li>Aprendizaje autodidacta</li>
+                        <li>Adaptabilidad</li>
+                        <li>Curiosidad intelectual</li>
+                    </ul>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
-        <section>
-            Sigueme en mis redes:
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a>
-        </section>
         <p>&copy;2026 Alejandro Rodriguez Lugo. Todos los derechos reservados</p>
     </footer>
 </body>
