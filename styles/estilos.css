@@ -381,6 +381,10 @@ hr {
     background-color: cadetblue;
 }
 
+.icon-redes{
+    border-radius: 35px;;
+}
+
 @media (max-width: 1042px) {
     .menu-icon {
         display: flex;
@@ -438,3 +442,4 @@ hr {
     }
 
 }
+
