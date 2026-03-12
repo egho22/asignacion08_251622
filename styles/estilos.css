@@ -22,7 +22,6 @@ footer {
     align-items: center;
     gap: 30px;
     max-width: 900px;
-    min-width: 500px;
     margin: 0 auto;
 }
 
@@ -437,4 +436,5 @@ hr {
     .form-buttons {
         flex-direction: column;
     }
+
 }
