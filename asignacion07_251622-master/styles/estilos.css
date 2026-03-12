@@ -5,6 +5,7 @@ nav {
     height: 13vh;
     max-height: 100px;
     padding: 10px;
+    background-color: #1244a0;
 }
 
 footer {
@@ -22,7 +23,6 @@ footer {
     align-items: center;
     gap: 30px;
     max-width: 900px;
-    min-width: 500px;
     margin: 0 auto;
 }
 
@@ -380,6 +380,10 @@ hr {
 
 .git {
     background-color: cadetblue;
+}
+
+.icon-redes{
+    border-radius: 35px;;
 }
 
 @media (max-width: 1042px) {
