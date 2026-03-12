@@ -5,6 +5,7 @@ nav {
     height: 13vh;
     max-height: 100px;
     padding: 10px;
+    background-color: #1244a0;
 }
 
 footer {
@@ -442,4 +443,5 @@ hr {
     }
 
 }
+
 
